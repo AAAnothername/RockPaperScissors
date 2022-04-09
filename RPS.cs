@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -113,7 +113,7 @@ namespace RockPaperScissor
 			Active = true;
 			Console.WriteLine("Welcome to Rock Paper Scissors!");
 			 _InputRequest:
-			Console.WriteLine("Please type out 'Rock', 'Paper' or 'Scissor.");
+			Console.WriteLine("Please type out 'Rock', 'Paper' or 'Scissors'.");
 
 			
 			Console.WriteLine(); 
@@ -131,7 +131,7 @@ namespace RockPaperScissor
 			Thread.Sleep(2310);
 			Console.WriteLine();
 			Random r = new Random(Guid.NewGuid().GetHashCode());
-			x = r.Next(1, 3);
+			x = r.Next(1, 4);
 			GameDone = true;
 			goto _DetermineAiChoice;
 			_ContinueEnd:
